@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.nav h1 {
+    font-size: 3rem;
+}
+
+.actions {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 8rem;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+.actions p {
+    font-size: 2rem;
+}
+
+.mainImg img {
+    max-width: 1400px;
+    margin-top: 3rem;
+}
