@@ -1,0 +1,22 @@
+.container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signFormat {
+    max-width: 20%;
+    padding: 20px;
+    background-color: gray !important;
+}
+
+.link {
+    text-align: right;
+}
+
+.signFormat form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

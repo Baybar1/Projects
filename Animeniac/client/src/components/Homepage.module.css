@@ -1,15 +1,27 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: baseline;
 }
 
+.nav button {
+    color: red;
+    background-color: black;
+    border: 1px solid red;
+}
+
 .nav h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    color: white;
 }
 
 .actions {
-    border: 2px solid black;
+    border: 2px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -23,7 +35,3 @@
     font-size: 2rem;
 }
 
-.mainImg img {
-    max-width: 1400px;
-    margin-top: 3rem;
-}
