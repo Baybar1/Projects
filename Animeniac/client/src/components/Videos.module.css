@@ -1,0 +1,59 @@
+.container {
+    height: 900px;
+}
+
+.nav {
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.title {
+    font-size: 4rem;
+    width: 60%;
+    text-align: center;
+}
+
+.link {
+    color: red;
+    font-size: 1.5rem;
+    align-self: center;
+    width: 20%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.weeklyVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.select {
+    border: 2px solid gray;
+    background-color: black;
+    color: gray;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.videos select {
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.videos p {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

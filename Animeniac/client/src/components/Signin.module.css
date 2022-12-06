@@ -11,7 +11,7 @@
     background-color: gray !important;
 }
 
-.link {
+.linkHome {
     text-align: right;
 }
 
@@ -19,4 +19,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.signUp {
+    width: 80%;
+}
+
+.noLine {
+    text-decoration: none;
 }

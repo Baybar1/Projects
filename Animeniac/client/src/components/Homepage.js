@@ -9,15 +9,17 @@ export const Homepage = () => {
         <div className={styles.container}>
             <div className={styles.nav}>
             <h1>Animeniac</h1>
-            <Link to = {'/signin'}><Button variant = 'outlined'>Sign in</Button></Link>
+            <div className={styles.signIn}>
+            <Link to = {'/signin'} className={styles.noLine}><Button variant = 'outlined'>Sign in</Button></Link>
+            </div>
             </div>
             <div className={styles.actions}>
-                <Link to = '/profile'><p>Profile</p></Link>
-                <Link to = '/animes'><p>Animes</p></Link>
-                <Link to = '/videos'><p>Videos</p></Link>
+                <Link to = '/profile' className={styles.noLine}><p>Profile</p></Link>
+                <Link to = '/animes' className={styles.noLine}><p>Animes</p></Link>
+                <Link to = '/videos' className={styles.noLine}><p>Videos</p></Link>
             </div>
-            <div>
-                <img src = 'https://i0.wp.com/vgkami.com/wp-content/uploads/2022/03/VGKStrongestAnimeCharactersFeaturedImg.jpg?resize=1200%2C675&ssl=1'></img>
+            <div className={styles.mainImg}>
+                
             </div>
         </div>
     )

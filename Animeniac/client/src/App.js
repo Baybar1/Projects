@@ -5,6 +5,7 @@ import { Profile } from './components/Profile';
 import { Animes } from './components/Animes';
 import { Videos } from './components/Videos';
 import { Signin } from './components/Signin';
+import { Register } from './components/Register';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path = '/animes' element = {<Animes />} />
       <Route path = '/videos' element = {<Videos />} />
       <Route path = '/signin' element = {<Signin />} />
+      <Route path = '/register' element = {<Register />} />
       </Routes>
       </BrowserRouter>
     </div>

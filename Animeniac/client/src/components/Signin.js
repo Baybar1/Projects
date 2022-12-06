@@ -9,12 +9,13 @@ import Button from '@mui/material/Button';
 import ClearIcon from '@mui/icons-material/Clear';
 
 
+
 export const Signin = () => {
     return (
         <div className={styles.container}>
             <Paper elevation={3} className={styles.signFormat}>
                 <form>
-                    <Link to = {'/'} className={styles.link}><ClearIcon /></Link>
+                    <Link to = {'/'} className={styles.linkHome}><ClearIcon /></Link>
                 <FormControl variant="outlined" style={styles.input}>
                     <InputLabel>Username</InputLabel>
                     <OutlinedInput type="text"/>
@@ -23,8 +24,8 @@ export const Signin = () => {
                     <InputLabel>Password</InputLabel>
                     <OutlinedInput type="password"/>
                 </FormControl>
-                <Button type="submit" variant="contained" color="primary">Sign In</Button>
-                <Button type="submit" variant="contained" color="primary">Register</Button>
+                <Link to ={'/profile'} className={styles.noLine}><Button type="submit" variant="contained" color="primary" className={styles.signUp}>Sign In</Button></Link>
+                <Link to ={'/register'} className={styles.noLine}><Button type="submit" variant="contained" color="primary" className={styles.signUp}>Register</Button></Link>
                 </form>
             </Paper>
         </div>

@@ -1,12 +1,12 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%
 }
 
 .nav {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
+    border-bottom: 1px solid gray;
 }
 
 .nav button {
@@ -15,23 +15,38 @@
     border: 1px solid red;
 }
 
+.signIn {
+    flex: 1;
+    text-align: center;
+}
+
 .nav h1 {
     font-size: 5rem;
-    color: white;
+    flex: 9;
+    text-align: center;
 }
 
 .actions {
-    border: 2px solid gray;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 8rem;
+    justify-content: space-evenly;
     border-radius: 5px;
     gap: 10px;
     padding: 20px 0px;
+    margin-bottom: 20px;
 }
 
 .actions p {
     font-size: 2rem;
+}
+
+.noLine {
+    text-decoration: none;
+}
+
+.mainImg {
+    background-image: url('https://i0.wp.com/vgkami.com/wp-content/uploads/2022/03/VGKStrongestAnimeCharactersFeaturedImg.jpg?resize=1200%2C675&ssl=1');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
