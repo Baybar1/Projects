@@ -52,7 +52,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.videos p {
+.videoSelection {
     display: flex;
     gap: 20px;
     justify-content: center;

@@ -4,7 +4,8 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import axios from 'axios'
+import Button from '@mui/material/Button';
+import AddIcon from '@mui/icons-material/Add';
 import { Link } from 'react-router-dom';
 
 export const Animes = () => {
@@ -31,6 +32,7 @@ export const Animes = () => {
                             <Grid item xs={2} sm={4} md={4} key={index}>
                                 <div className={styles.image1}></div>
                                 <Item className={styles.tags}>Naruto</Item>
+                                <Button variant = 'contained' startIcon = {<AddIcon />}>Add to Favorites</Button>
                             </Grid>
                         ))}
                     </Grid>
@@ -41,6 +43,7 @@ export const Animes = () => {
                             <Grid item xs={2} sm={4} md={4} key={index}>
                                 <div className={styles.image2}></div>
                                 <Item className={styles.tags}>One Piece</Item>
+                                <Button variant = 'contained' startIcon = {<AddIcon />}>Add to Favorites</Button>
                             </Grid>
                         ))}
                     </Grid>
@@ -51,6 +54,7 @@ export const Animes = () => {
                             <Grid item xs={2} sm={4} md={4} key={index}>
                                 <div className={styles.image3}></div>
                                 <Item className={styles.tags}>Bleach</Item>
+                                <Button variant = 'contained' startIcon = {<AddIcon />}>Add to Favorites</Button>
                             </Grid>
                         ))}
                     </Grid>
@@ -61,6 +65,7 @@ export const Animes = () => {
                             <Grid item xs={2} sm={4} md={4} key={index}>
                                 <div className={styles.image4}></div>
                                 <Item className={styles.tags}>Attack on Titan</Item>
+                                <Button variant = 'contained' startIcon = {<AddIcon />}>Add to Favorites</Button>
                             </Grid>
                         ))}
                     </Grid>
@@ -71,6 +76,7 @@ export const Animes = () => {
                             <Grid item xs={2} sm={4} md={4} key={index}>
                                 <div className={styles.image5}></div>
                                 <Item className={styles.tags}>Chainsaw Man</Item>
+                                <Button variant = 'contained' startIcon = {<AddIcon />}>Add to Favorites</Button>
                             </Grid>
                         ))}
                     </Grid>
@@ -81,6 +87,7 @@ export const Animes = () => {
                             <Grid item xs={2} sm={4} md={4} key={index}>
                                 <div className={styles.image6}></div>
                                 <Item className={styles.tags}>Black Clover</Item>
+                                <Button variant = 'contained' startIcon = {<AddIcon />}>Add to Favorites</Button>
                             </Grid>
                         ))}
                     </Grid>

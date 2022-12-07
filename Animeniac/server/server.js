@@ -7,6 +7,6 @@ const port = 8000;
 require('./config/anime.config');
 require('./routes/anime.routes')(app)
 require('dotenv').config();
-const jwt = require('jsonwebtoken')
+
 
 app.listen(port, () => console.log('Locked and Loaded on port 8000'))
