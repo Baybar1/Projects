@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "images/NarutoS.jpg"
+    },
+    {
+        "id": 2,
+        "image": "images/OnePiece.jpg"
+    },
+    {
+        "id": 3,
+        "image": "images/Bleach_IchigoTYBWlogo.jpg"
+    },
+    {
+        "id": 4,
+        "image": "images/AOT.jpeg"
+    },
+    {
+        "id": 5,
+        "image": "images/ChainsawMan.jpg"
+    },
+    {
+        "id": 6,
+        "image": "images/BlackC.jpeg"
+    }
+]

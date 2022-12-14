@@ -6,6 +6,8 @@ import { Animes } from './components/Animes';
 import { Videos } from './components/Videos';
 import { Signin } from './components/Signin';
 import { Register } from './components/Register';
+import { Comments } from './components/Comments';
+import { UpdateComment } from './components/UpdateComment';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path = '/videos' element = {<Videos />} />
       <Route path = '/signin' element = {<Signin />} />
       <Route path = '/register' element = {<Register />} />
+      <Route path = '/animes/:id' element = {<Comments />} />
+      <Route path = '/comments/:id' element = {<UpdateComment />} />
       </Routes>
       </BrowserRouter>
     </div>

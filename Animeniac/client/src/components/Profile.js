@@ -1,30 +1,28 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 import styles from './Profile.module.css'
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+
 
 export const Profile = () => {
+
+    const [user,setUser] = useState('')
+
+    useEffect(() => {
+        axios.get('http://localhost:8000/api/users')
+        .then(response => {
+            setUser(response.data)
+        })
+        .catch(error => console.log(error))
+    },[])
+
+    
     return (
         <div className={styles.container}>
             <div className={styles.nav}>
                 <Link to={'/'} className={styles.link}>Home</Link>
                 <h1 className={styles.title}>Profile</h1>
-            </div>
-            <div className={styles.main}>
-                <div className={styles.left}>
-                    <div className={styles.avatar}>
-                
-                    </div>
-                    <div className={styles.actions}>
-                
-                    </div>
-                </div>
-                <div className={styles.right}>
-                    <div className={styles.status}>
-                        <p>Status</p>
-                    </div>
-                </div>
+                {user.username}
             </div>
         </div>
     )

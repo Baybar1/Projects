@@ -1,36 +1,33 @@
-const User = require('../models/anime.models')
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken')
+const Anime = require('../models/anime.models')
 
 module.exports = {
-
-    find : (request,response) => {
-        User.find({})
-        .then(displayUser => res.json(displayUser))
+    find: (request,response) => {
+        Anime.find({})
+        .then(displayAnime => response.json(displayAnime))
         .catch(error => response.json(error))
-    },
+    } ,
 
-    register : (request, response) => {
-        User.create(request.body)
-        .then(createUser => response.json({msg : 'Success!', createUser : createUser}))
+    create: (request,response) => {
+        Anime.create(request.body)
+        .then(anime => response.json(anime))
         .catch(error => response.status(400).json(error))
     },
 
-    findOne : (request, response) => {
-        User.findOne({_id: request.params.id})
-        .then(findOneUser => response.json(findOneUser))
+    findOne: (request,response) => {
+        Anime.findOne({_id: request.params.id})
+        .then(findOneAnime => response.json(findOneAnime))
         .catch(error => response.json(error))
     },
 
-    update : (request,response) => {
-        User.findByIdAndUpdate({_id: request.params.id})
-        .then(updateUser => response.json(updateUser))
+    update: (request,response) => {
+        Anime.findOneAndUpdate({_id: request.params.id}, request.body, {new:true})
+        .then(updateAnime => response.json(updateAnime))
         .catch(error => response.status(400).json(error))
     },
 
-    delete : (request,response) => {
-        User.findOneAndDelete({_id : request.params.id})
-        .then(deleteUser => response.json(deleteUser))
+    delete: (request,response) => {
+        Anime.findOneAndDelete({_id: request.params.id})
+        .then(deleteAnime => response.json(deleteAnime))
         .catch(error => response.json(error))
     }
 }
