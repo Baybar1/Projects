@@ -1,0 +1,24 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home h1 {
+    font-size: 60px;
+}
+
+.home h2 {
+    font-size: 40px;
+}
+
+.link {
+    text-decoration: none;
+    border: 3px solid #219ebc;
+    padding: 5px;
+    background-color: #fb8500;
+    color: #219ebc;
+}
+
