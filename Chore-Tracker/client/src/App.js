@@ -10,21 +10,12 @@ export const AppContext = createContext();
 
 function App() {
 
-  const [chore,setChore] = useState([])
-  const [choreItem,setChoreItem] = useState('')
-  const [choreName,setChoreName] = useState('');
-  const [choreTitle,setChoreTitle] = useState('');
-  const [choreDate,setChoreDate] = useState('');
-  const [choreTime,setChoreTime] = useState('');
-
-  const newChoreList = (newChore) => {
-    setChore(newChore)
-  }
-
+  
+ 
 
   return (
     <div className="App">
-      <AppContext.Provider value = {{chore,setChore,newChoreList,choreItem,setChoreItem, choreName,setChoreName,choreTitle,setChoreTitle,choreDate,setChoreDate,choreTime,setChoreTime}}>
+      
       <Router>
         <Routes>
           <Route path = {'/'} element = {<Homepage />} />
@@ -32,7 +23,7 @@ function App() {
           <Route path = {'/add'} element = {<AddChore />} />
         </Routes>
       </Router>
-      </AppContext.Provider>
+      
     </div>
   );
 }

@@ -20,8 +20,28 @@
     border: 2px solid #2a9d8f;
 }
 
+.choreList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .chores {
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.delete {
+    color: black;
+}
+
