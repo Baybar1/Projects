@@ -56,38 +56,29 @@ export const ChoresDisplay = () => {
     }
 
     return (
-        <div>
-            <React.Fragment>
-                <CssBaseline />
-                <Container maxWidth="md">
-                    <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
-                        <div className={styles.nav}>
-                            <h1>Chores</h1>
-                            <Link to ={'/add'} className={styles.link}><Button variant="outlined" startIcon={<AddIcon/>} className={styles.button}>New Chore</Button></Link>
-                        </div>
-                        <div className={styles.choreList}>
-                        {
-                            chore.map((chore,index) => {
-                                return(
-                                    <ul key = {index} className={styles.chores}>
-                                        <li><strong>Name :</strong> {chore.choreName}</li>
-                                        <li><strong>Chore :</strong> {chore.choreTitle}</li>
-                                        <li><strong>Day :</strong> {chore.choreDate}</li>
-                                        <li><strong>Time :</strong> {chore.choreTime}</li>
-                                        <div className={styles.actions}>
-                                            <Checkbox {...label} />
-                                            <Button onClick={(e) => deleteChore(chore._id)}><DeleteIcon className={styles.delete}/></Button>
-                                        </div>
-                                    </ul>
-                                )
+        <div className={styles.background}>
+            <div className={styles.nav}>
+                <h1>Chores</h1>
+                <Link to ={'/add'} className={styles.link}><Button variant="outlined" startIcon={<AddIcon/>} className={styles.button}>New Chore</Button></Link>
+            </div>
+            <div className={styles.choreList}>
+            {
+                chore.map((chore,index) => {
+                    return(
+                        <ul key = {index} className={styles.chores}>
+                            <li><strong>Name :</strong> {chore.choreName}</li>
+                            <li><strong>Chore :</strong> {chore.choreTitle}</li>
+                            <li><strong>Day :</strong> {chore.choreDate}</li>
+                            <li><strong>Time :</strong> {chore.choreTime}</li>
+                            <div className={styles.actions}>
+                                <Checkbox {...label} />
+                                <Button onClick={(e) => deleteChore(chore._id)}><DeleteIcon className={styles.delete}/></Button>
+                            </div>
+                        </ul>
+                            )
                             })
-                        }
-                        </div>
-                    </Box>
-                    
-                </Container>
-            </React.Fragment>
-
+            }
+            </div>
         </div>
     )
 }
